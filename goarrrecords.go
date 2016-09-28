@@ -201,5 +201,5 @@ func CopyRecs(dstif interface{}, src interface{}) (interface{}, error) {
 		}
 		slice = reflect.Append(slice, newval)
 	}
-	return slice, nil
+	return slice.Interface(), nil
 }
